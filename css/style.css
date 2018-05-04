@@ -1,0 +1,111 @@
+
+body {
+    font-family: 'Montserrat',
+    sans-serif;
+    margin: 0;
+}
+
+.landing-title h1 {
+    font-size: 2.8rem;
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin: 20px 0
+}
+
+.landing-title h1 .letter {
+    display: inline-block;
+    line-height: 1em;
+    opacity: 0;
+}
+
+.landing-title h1 .letter:last-child {
+    color: #00ACC1;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+}
+
+.landing-title {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: scale(0) translate(50%, -50%);
+    transform: scale(0) translate(50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 2px #131415;
+    font-family: "Montserrat",
+    sans-serif;
+    transition: height 0.4s;
+    padding: 30px 40px;
+    width: 90%;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .landing-title h1 {
+        font-size: 1.6rem;
+    }
+    .landing-title {
+        font-size: 14px;
+        padding: 30px 10px 30px 20px;
+    }
+}
+
+.landing-title__content {
+    margin-top: 50px;
+    line-height: 21px;
+}
+
+.landing-title__action {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-download {
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #00ACC1, #00838F);
+}
+
+.cv-download:hover {
+    background-position: 98% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.cv-download:focus {
+    outline: none;
+}
+
+.cv-download:active {
+    background-position: 0 0;
+    transition: all .2s ease-in-out;
+}
