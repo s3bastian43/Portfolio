@@ -241,8 +241,114 @@ if ($('#particles-js').length) {
 })();
 }
 
+function closeNavigation(toggleNav, overlayNav, overlayContent, navigation) {
+    toggleNav.removeClass('close-nav');
+    $('body').removeClass('noscroll');
+
+    overlayContent.children('span').velocity({
+        translateZ: 0,
+        scaleX: 1,
+        scaleY: 1,
+    }, 500, 'easeInCubic', function () {
+        navigation.removeClass('fade-in');
+
+        overlayNav.children('span').velocity({
+            translateZ: 0,
+            scaleX: 0,
+            scaleY: 0,
+        }, 0);
+
+        overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+            overlayContent.children('span').velocity({
+                translateZ: 0,
+                scaleX: 0,
+                scaleY: 0,
+            }, 0, function () {
+                overlayContent.removeClass('is-hidden')
+            });
+        });
+        if ($('html').hasClass('no-csstransitions')) {
+            overlayContent.children('span').velocity({
+                translateZ: 0,
+                scaleX: 0,
+                scaleY: 0,
+            }, 0, function () {
+                overlayContent.removeClass('is-hidden')
+            });
+        }
+    });
+}
+
+function windowSize() {
+    windowHeight = window.innerHeight ? window.innerHeight : $(window).height();
+    windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+
+}
+
+function headerControl () {
+    var scrollTimeOut = true,
+        lastYPos = 0,
+        yPos = 0,
+        yPosDelta = 5,
+        nav = $('.nav-trigger'),
+        logo = $('.logo-container'),
+        navHeight = nav.outerHeight(),
+        setNavClass = function () {
+            scrollTimeOut = false;
+            yPos = $(window).scrollTop();
+
+            if (Math.abs(lastYPos - yPos) >= yPosDelta) {
+                if (yPos > lastYPos && yPos > navHeight) {
+                    nav.addClass('hide-x');
+                    logo.addClass('hide-x');
+                } else {
+                    nav.removeClass('hide-x');
+                    logo.removeClass('hide-x');
+                }
+                lastYPos = yPos;
+            }
+        };
+    
+    $(window).scroll(function (e) {
+        scrollTimeOut = true;
+    });
+
+    setInterval(function () {
+        let windowWidth = $(window).width();
+        
+        if (windowWidth < 1180) {
+            if (scrollTimeOut) {
+                setNavClass();
+            }
+        }
+    }, 250);
+    
+}
+
 $(document).ready(function () {
     if ($('main').length) {
+    console.log('Hello there! If you would like to inspect my code in a more cleaner way, you can switch to Responsive Design Mode (Ctrl+Shift+M) and refresh the page. This will disable the scroll animations which include the inline CSS through the global style attribute.')
+    //Init Function of init it wherever you like...
+    let windowWidth = $(window).width();
+
+    if (windowWidth < 1180) {
+        headerControl();
+    }
+    // For example, get window size on window resize
+    $(window).resize(function () {
+        let windowWidth = $(window).width();
+
+    if (windowWidth < 1180) {
+            headerControl();            
+
+        } else {
+
+            $('.nav-trigger').removeClass('hide-x');
+            $('.logo-container').removeClass('hide-x');
+        }
+    });
+    
+
     var overlayNav = $('.overlay-nav'),
         overlayContent = $('.overlay-content'),
         navigation = $('.primary-nav'),
@@ -259,7 +365,7 @@ $(document).ready(function () {
         if (!toggleNav.hasClass('close-nav')) {
             //it means navigation is not visible yet - open it and animate navigation layer
             toggleNav.addClass('close-nav');
-
+            $('body').addClass('noscroll');
             overlayNav.children('span').velocity({
                 translateZ: 0,
                 scaleX: 1,
@@ -269,36 +375,7 @@ $(document).ready(function () {
             });
         } else {
             //navigation is open - close it and remove navigation layer
-            toggleNav.removeClass('close-nav');
-
-            overlayContent.children('span').velocity({
-                translateZ: 0,
-                scaleX: 1,
-                scaleY: 1,
-            }, 500, 'easeInCubic', function () {
-                navigation.removeClass('fade-in');
-
-                overlayNav.children('span').velocity({
-                    translateZ: 0,
-                    scaleX: 0,
-                    scaleY: 0,
-                }, 0);
-
-                overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
-                    overlayContent.children('span').velocity({
-                        translateZ: 0,
-                        scaleX: 0,
-                        scaleY: 0,
-                    }, 0, function () { overlayContent.removeClass('is-hidden') });
-                });
-                if ($('html').hasClass('no-csstransitions')) {
-                    overlayContent.children('span').velocity({
-                        translateZ: 0,
-                        scaleX: 0,
-                        scaleY: 0,
-                    }, 0, function () { overlayContent.removeClass('is-hidden') });
-                }
-            });
+            closeNavigation(toggleNav, overlayNav, overlayContent, navigation);
         }
     });
 
@@ -326,8 +403,122 @@ $(document).ready(function () {
             left: -(diameterValue / 2) + 'px',
         }, 0);
     }
-    }
+
+    $('main a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 800);
+        return false;
+    });
+    /* Scroll spy and navigation */
+    $(".primary-nav").scrollspy({
+        activeClass: 'current',
+        animate: true,
+        offset: '-40'
+    });
+
+    $(".logo-container").scrollspy({
+        activeClass: '',
+        animate: true,
+        offset: '-140'
+    });
+
+    $('.primary-nav a').click(function () {
+        closeNavigation(toggleNav, overlayNav, overlayContent, navigation);
+    });
+
+    window.sr = ScrollReveal({ 
+        mobile: false
+     });
+    sr.reveal('#about-me .section-content', {
+        scale: 0.5,
+        duration: 800,
+        distance: '120px'
+    });
+    sr.reveal('section h1', {
+        origin: 'left',
+        scale: 0.5,
+        duration: 800,
+        distance: '120px',
+        delay: 100
+    });
+
+    sr.reveal('.journey h3, .timeline__container', { 
+        delay: 300,
+        scale: 0.5,
+        duration: 800 
+    });
+    sr.reveal('.left-timeline', {
+        delay: 800,
+        origin: 'left'
+    });
+    sr.reveal('.right-timeline', {
+        delay: 800,
+        origin: 'right'
+    });
+    sr.reveal('.skills__title', {
+        scale: 0.5,
+        duration: 800,
+        viewFactor: 0.6,        
+        afterReveal: function (domEl) { 
+            $(domEl).addClass('rotate');
+        }, 
+    }, 200)
+    sr.reveal('.skills__items li', { 
+        duration: 200,
+        origin: 'right',
+        delay: 1000,
+        viewFactor: 0.6         
+    }, 100);
+    sr.reveal('#work p', {
+        origin: 'left',
+        scale: 0.5,
+        duration: 800,
+        distance: '50%',
+        delay: 100
+    });
+    sr.reveal('.projects-grid__project', {
+        duration: 900,
+        delay: 800,
+        distance: '80%',
+        viewFactor: 0.1        
+    });
+    sr.reveal('#contact p', {
+        origin: 'left',
+        scale: 0.5,
+        duration: 800,
+        distance: '50%',
+        delay: 100
+    });
+    sr.reveal('#contact .controls, #contact button', {
+        delay: 300,
+        scale: 1,
+        duration: 800,
+        distance: '100%' 
+    });
+
+    
+
+
+}   
 });
+
+(function ($) {
+    function floatLabel(inputType) {
+        $(inputType).each(function () {
+            var $this = $(this);
+            $this.focus(function () {
+                $this.next().addClass("active");
+            });
+            $this.blur(function () {
+                if ($this.val() === '' || $this.val() === 'blank') {
+                    $this.next().removeClass();
+                }
+            });
+        });
+    }
+    floatLabel(".float-label");
+})(jQuery);
 
 
 

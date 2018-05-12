@@ -17,10 +17,18 @@
 
 .btn-primary {
     background-color: $accent-color;
+    color: #fff;
+    border: 1px solid $accent-color;
+    outline: none;
+    overflow: hidden;
+
+    &.wider {
+        min-width: 200px;
+    }
 }
 
 $s-btn-width: 8em;
-
+$l-btn-width: 10em;
 /* Secondary button style adapted from
 https: //codepen.io/chrisota/pen/bNdRaM
 */
@@ -33,7 +41,7 @@ https: //codepen.io/chrisota/pen/bNdRaM
     outline: none;
     overflow: hidden;
     transition: color 0.3s 0.1s ease-out;
-
+    z-index: 2;
     &::before {
         position: absolute;
         top: -108px;
@@ -54,6 +62,22 @@ https: //codepen.io/chrisota/pen/bNdRaM
         color: #fff;
         &::before {
             box-shadow: inset 0 0 0 $s-btn-width rgba($accent-color, 1);
+        }
+    }
+}
+
+.wider-s-btn {
+    width:$l-btn-width;
+    &::before {
+        top: -138px;
+        width: $l-btn-width*2;
+        height: $l-btn-width*2;
+        left: -$l-btn-width/2;
+    }
+
+    &:hover {
+        &::before {
+            box-shadow: inset 0 0 0 $l-btn-width rgba($accent-color, 1);
         }
     }
 }

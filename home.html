@@ -8,37 +8,259 @@
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>    
     <title>Home - Sebastian's Portfolio</title>
 </head>
 
 <body>
+    <script>
+        window.sr = ScrollReveal();
+
+        // Add class to <html> if ScrollReveal is supported
+        // Note: this method is deprecated, and only works in version 3
+        if (sr.isSupported()) {
+            document.documentElement.classList.add('sr');
+        }
+
+    </script>
     <div class="logo-container">
         <img src="images/logo-3A.svg" width="100%" height="100%">
+        <a href="#about-me"></a>
     </div>
 
     <nav>
         <ul class="primary-nav">
-            <li><a href="#" class="stricked-link">About Me</a></li>
-            <li><a href="#" class="stricked-link">Skills</a></li>
-            <li><a href="#" class="stricked-link">Work</a></li>
-            <li><a href="#" class="stricked-link">Contact</a></li>
+            <li><a href="#about-me" class="stricked-link">About Me</a></li>
+            <li><a href="#skills" class="stricked-link">Skills</a></li>
+            <li><a href="#work" class="stricked-link">Work</a></li>
+            <li><a href="#contact" class="stricked-link">Contact</a></li>
         </ul>
     </nav>
-
+    
     <main role="main">
+        <div class="section-separator">
+        
+        </div>
         <section id="about-me">
             <div class="mix">
                 <h1>About Me <span class="highlighted-dot">.</span></h1>
                 <div class="section-content">
+                    <p>
                     As a front-end developer with skills in HTML, CSS, JavaScript, React and more,
                     I aim to provide an easier experience for the user and to focus on his problems firstly,
                     rather than on the technical ones. Willing to continuously gather new skills and expand my actual ones
                     I do everything to stay up-to-date with the latest technologies of the mad, but beautiful,
                     front-end development world.
+                    </p>
+                    <div class="journey">
+                        <h3>My Jouney So Far</h3>
+                        <div class="timeline">
+                            <div class="timeline__container">
+                                <div class="timeline__block">
+                                    <div class="timeline__img timeline__img--picture js-img">
+                                        <img src="images/browser.svg" alt="Web Designer Icon">
+                                    </div>
+
+                                    <div class="timeline__content left-timeline">
+                                        <h4>Web Designer</h4>
+                                        <span class="timeline__location">Eastill Ltd Northampton</span>
+                                        <span class="timeline__date">Oct. 2017 - Present</span>                                
+                                        <a class="read-more stricked-link">Read more</a>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__img timeline__img--movie js-img">
+                                        <img src="images/graduation-cap.svg" alt="Graduate Cap">
+                                    </div>
+
+                                    <div class="timeline__content right-timeline">
+                                        <h4>Business Computing (Web Design) Graduate</h4>
+                                        <span class="timeline__location">The University Of Northampton</span>
+                                        <span class="timeline__date">Jun. 2015 - Apr. 2018</span>
+                                        <a class="read-more stricked-link">Read more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
+        <div class="section-separator">
+        
+        </div>
+        <section id="skills">
+            <div class="mix">
+                <h1>Skills <span class="highlighted-dot">.</span></h1>
+                <div class="section-content">
+                    <div class="skills__indskill">
+                        <div class="skills__left-side">
+                            <span class="skills__title" style="top: 65px; left: -6px;">Front-End</span>
+                        </div>
+                        <ul class="skills__items">
+                            <li>HTML</li>
+                            <li>CSS | SASS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>                            
+                            <li>React.js</li>
+                            <li>Pug.js</li>
+                            <li>Bootstrap</li>                         
+                            <li>Material Design Lite</li>                                                        
+                        </ul>
+                    </div>
+
+                    <div class="skills__indskill">
+                        <div class="skills__left-side">
+                            <span class="skills__title" style="top: 59px">Back-End</span>
+                        </div>
+                        <ul class="skills__items">
+                            <li>PHP</li>
+                            <li>Node.js | Express.js</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__indskill">
+                        <div class="skills__left-side">
+                            <span class="skills__title" style="top: 31px; left: 26px;">CMS</span>
+                        </div>
+                        <ul class="skills__items">
+                            <li>WordPress</li>
+                            <li>Jekyll</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__indskill">
+                        <div class="skills__left-side">
+                            <span class="skills__title" style="top: 43px; left: 20px;">Other</span>
+                        </div>
+                        <ul class="skills__items">
+                            <li>SEO</li>
+                            <li>WPO</li>
+                            <li>AJAX</li>
+                            <li>Git</li>                            
+                        </ul>
+                    </div>
+
+                    <div class="skills__indskill">
+                        <div class="skills__left-side">
+                            <span class="skills__title" style="top: 59px">Database</span>
+                        </div>
+                        <ul class="skills__items">
+                            <li>SQL (Oracle)</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__indskill">
+                        <div class="skills__left-side">
+                            <span class="skills__title" style="top: 46px; left: 12px;">Design</span>
+                        </div>
+                        <ul class="skills__items">
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>InDesign</li>
+                            <li>Balsamiq</li>
+                            <li>XD</li>
+                            <li>Justinmind</li>
+                            <li>Invision App</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separator">
+
+        </div>
+        <section id="work">
+            <div class="mix">
+                <h1>
+                    Work
+                    <span class="highlighted-dot">.</span>
+                </h1>
+                <div class="section-content">
+                    <p>Here's a selection of my recent work. For more projects, please <a href="#contact">contact me</a>.</p>
+                    <div class="projects-grid">
+                        <div class="projects-grid__project uniplanner-project">
+                            <div class="projects-grid__bg dark-overlay" style="background-image: url(images/portfolio/uniplanner-grid.png);"></div>
+                            <div class="projects-grid__center">
+                                <h2 class="projects-grid__header">Uniplanner</h2>
+                                <hr class="projects-grid__separator">
+                                <h4 class="projects-grid__subtitle">Student Planner & Team Collaboration Web App.</h4>
+                            </div>
+                            <a href="/projects/uniplanner.html" class="projects-grid__link"></a>
+                        </div>
+                        <div class="projects-grid__project homestart-project">
+                            <div class="projects-grid__bg dark-overlay" style="background-image: url(images/portfolio/homestart-grid.jpg);"></div>
+                            <div class="projects-grid__center">
+                                <h2 class="projects-grid__header">Homestart</h2>
+                                <hr class="projects-grid__separator">
+                                <h4 class="projects-grid__subtitle">Website Redesign Using WordPress.</h4>
+                            </div>
+                            <a href="/projects/homestart.html" class="projects-grid__link"></a>
+                        </div>
+                        <div class="projects-grid__project johncullen-project">
+                            <div class="projects-grid__bg dark-overlay" style="background-image: url(images/portfolio/uniplanner-grid.png);"></div>
+                            <div class="projects-grid__center">
+                                <h2 class="projects-grid__header">Uniplanner</h2>
+                                <hr class="projects-grid__separator">
+                                <h4 class="projects-grid__subtitle">Student Planner & Team Collaboration Web App.</h4>
+                            </div>
+                            <a href="/projects/uniplanner.html" class="projects-grid__link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separator">
+        
+        </div>
+        <section id="contact">
+            <div class="mix">
+                <h1>
+                    Contact Me
+                    <span class="highlighted-dot">.</span>
+                </h1>
+                <div class="section-content">
+                    <p>Please don't hesitate to contact me if you have any enquiries.</p>
+                    <form action="contact.php" method="POST">
+                        <div class="controls">
+                            <input type="text" class="float-label" name="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="controls">
+                            <input type="email" class="float-label" name="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="controls">
+                            <input type="text" class="float-label" name="subject">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="controls">
+                            <textarea class="float-label" name="message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        
+                        <button type="submit" name="submit" class="btn btn-primary wider send-message">Send Message <img src="images/send-mail1.svg"></button>
+                    </form>                    
+                </div>
+        </section>
+        
     </main>
+    <footer>
+        <div class="footer-content">
+            <a class="social-icon" href="https://github.com/s3bastian43">
+                <i class="icon-github"></i>
+            </a>
+            <a class="social-icon" href="https://github.com/s3bastian43">
+                <i class="icon-linkedin-with-circle"></i>
+            </a>
+            <a class="social-icon" href="https://github.com/s3bastian43">
+                <i class="icon-twitter-with-circle"></i>
+            </a>
+        </div>
+    </footer>
 
     <div class="overlay-nav">
         <span></span>
@@ -47,9 +269,9 @@
     <div class="overlay-content">
         <span></span>
     </div>
-    <!-- cd-overlay-content -->
+    <!-- overlay-content -->
 
-    <a href="#" class="nav-trigger">
+    <a class="nav-trigger">
         Menu
         <span class="icon"></span>
     </a>
@@ -58,7 +280,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/moment.min.js"></script>
-    <script src="js/particles.min.js"></script>
+    <script src="js/scrollspy.min.js"></script> 
     <script src="js/script.js"></script>
 
 </body>

@@ -36,6 +36,11 @@ https: //medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a
     box-sizing: $box-model;
 }
 
+/*
+
+Tranform vendor prefixes are no longer required!
+
+*/
 @mixin transform($transforms) {
     -moz-transform: $transforms;
     -o-transform: $transforms;

@@ -1,3 +1,8 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $accent-color;
+}
 .stricked-link {
     text-decoration: none;
     position: relative;
@@ -29,7 +34,7 @@
         transition-duration: 400ms;
     }
 
-    &:hover {
+    &:hover, {
         &::before {
             @include transform(scaleX(1));
             @include transform-origin(bottom left);
@@ -38,6 +43,55 @@
             @include transform(scaleX(0));
             @include transform-origin(bottom right);
             transition-duration: 400ms;
+        }
+    }
+}
+
+.read-more {
+    text-decoration: none;
+    color: $accent-color;
+    font-style: italic;
+    cursor: pointer;
+    
+    &::before {
+        bottom: 8px;
+        top: 8px;
+        height: 40%;
+        opacity: 0.2;
+        left: -5px;
+        right: -5px;
+        @include transform(scaleX(0));
+        @include transform-origin(bottom right);
+        transition-duration: 400ms;
+    }
+}
+
+.only-stricked {
+    text-decoration: none;
+    position: relative;
+    @include font-smoothing;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        top: 7px;
+        height: 40%;
+        opacity: 0.2;
+        left: -5px;
+        right: -5px;
+        overflow: hidden;
+        background: $accent-color;
+        @include transform(scaleX(0));
+        @include transform-origin(bottom right);
+        transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;        
+        transition-duration: 400ms;
+        z-index: 0;
+    }
+
+    &:hover {
+        &::before {
+            @include transform(scaleX(1));
+            @include transform-origin(bottom left);
         }
     }
 }
