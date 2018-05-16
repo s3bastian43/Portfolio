@@ -241,9 +241,274 @@ if ($('#particles-js').length) {
 })();
 }
 
-function closeNavigation(toggleNav, overlayNav, overlayContent, navigation) {
+$(document).ready(function () {
+    if ($('main').length) {
+    console.log('Hello there! If you would like to inspect my code in a more cleaner way, you can switch to Responsive Design Mode (Ctrl+Shift+M) and refresh the page. This will disable the scroll animations which include the inline CSS through the global style attribute.')
+
+    let windowWidth = $(window).width();
+    if (windowWidth < 1180) {
+        headerControl();
+    }
+
+    $(window).resize(function () {
+        let windowWidth = $(window).width();
+
+    if (windowWidth < 1180) {
+            headerControl();            
+
+        } else {
+
+            $('.nav-trigger').removeClass('hide-x');
+            $('.logo-container').removeClass('hide-x');
+        }
+    });
+    
+
+    var overlayNav = $('.overlay-nav'),
+        overlayContent = $('.overlay-content'),
+        navigation = $('.primary-nav'),
+        toggleNav = $('.nav-trigger');
+
+    //inizialize navigation and content layers
+    layerInit();
+    $(window).on('resize', function () {
+        window.requestAnimationFrame(layerInit);
+    });
+
+    //open/close the menu and cover layers
+    toggleNav.on('click', function (e) {
+        if (!toggleNav.hasClass('close-nav')) {
+            //it means navigation is not visible yet - open it and animate navigation layer
+            toggleNav.addClass('close-nav');
+            $('body').addClass('noscroll');
+
+            let posx = e.clientX;
+            let posy = e.clientY;
+
+            overlayNav.css({ 'left': posx, 'top': posy });
+            overlayContent.css({ 'left': posx, 'top': posy });    
+
+            toggleNav.css('z-index', 15);
+                        
+            $('.overlay-nav span').css('background', 'rgba(49,49,49,0.9)');            
+            overlayNav.children('span').velocity({
+                translateZ: 0,
+                scaleX: 1,
+                scaleY: 1,
+            }, 600, 'easeInCubic', function () {
+                navigation.addClass('fade-in');
+                $('.menu-title__line').velocity({
+                    width: ['100%', 0],
+                }, 400);
+                $('.primary-nav li').velocity({
+                    opacity: [1, 0],
+                    translateX: [0, '-200px'],
+                }, 300, 'easeInCubic');
+                $('.menu__bottom').velocity({
+                    width: ['100%', 0],
+                }, 400);
+            });
+
+        } else {
+            //navigation is open - close it and remove navigation layer
+            closeNavigation(toggleNav, overlayNav, overlayContent, navigation);
+        }
+    });
+
+    function layerInit() {
+        var diameterValue = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
+        overlayNav.children('span').velocity({
+            scaleX: 0,
+            scaleY: 0,
+            translateZ: 0,
+        }, 50).velocity({
+            height: diameterValue + 'px',
+            width: diameterValue + 'px',
+            top: -(diameterValue / 2) + 'px',
+            left: -(diameterValue / 2) + 'px',
+        }, 0);
+
+        overlayContent.children('span').velocity({
+            scaleX: 0,
+            scaleY: 0,
+            translateZ: 0,
+        }, 50).velocity({
+            height: diameterValue + 'px',
+            width: diameterValue + 'px',
+            top: -(diameterValue / 2) + 'px',
+            left: -(diameterValue / 2) + 'px',
+        }, 0);
+    }
+
+    $('.left-timeline .read-more').on('click', function (e) {
+        let posx = e.clientX;
+        let posy = e.clientY;
+        let gradient = 'linear-gradient(to bottom right, #a8edea 0%, #fed6e3 100%)';
+        openModal(this, '.read-more-job', gradient, posx, posy, toggleNav, overlayNav, overlayContent);
+    });
+
+    $('.right-timeline .read-more').on('click', function (e) {
+        let posx = e.clientX;
+        let posy = e.clientY;
+        let gradient = 'linear-gradient(to top left, #37ecba 0%, #72afd3 100%)';
+        openModal(this, '.read-more-uni', gradient, posx, posy, toggleNav, overlayNav, overlayContent);
+    });
+
+    $('.read-more__action .close-modal').click(function (e) {
+        let posx = e.clientX;
+        let posy = e.clientY;
+        let dialog = $('.fade-in')
+        closeNavigation(toggleNav, overlayNav, overlayContent, dialog, posx, posy);
+    });
+
+
+    /* Scroll spy and navigation */
+
+    if ($('main.about').length) {
+        $('#work a').click(function () {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 800);
+            return false;
+        });
+
+        $(".menu-links").scrollspy({
+            activeClass: 'current',
+            animate: true,
+            offset: '-40'
+        });
+
+        $(".logo-container").scrollspy({
+            activeClass: '',
+            animate: true,
+            offset: '-140'
+        });
+    }
+
+    $('.primary-nav a').click(function () {
+        closeNavigation(toggleNav, overlayNav, overlayContent, navigation);
+    });
+
+    /* Scroll Reveal */
+    window.sr = ScrollReveal({ 
+        mobile: false
+     });
+    sr.reveal('#about-me .section-content', {
+        scale: 0.5,
+        duration: 800,
+        distance: '120px'
+    });
+    sr.reveal('section h1', {
+        origin: 'left',
+        scale: 0.5,
+        duration: 800,
+        distance: '120px',
+        delay: 100
+    });
+
+    sr.reveal('.journey h3, .timeline__container', { 
+        delay: 300,
+        scale: 0.5,
+        duration: 800 
+    });
+    sr.reveal('.left-timeline', {
+        delay: 800,
+        origin: 'left'
+    });
+    sr.reveal('.right-timeline', {
+        delay: 800,
+        origin: 'right'
+    });
+    sr.reveal('.skills__title', {
+        scale: 0.5,
+        duration: 800,
+        viewFactor: 0.6,        
+        afterReveal: function (domEl) { 
+            $(domEl).addClass('rotate');
+        }, 
+    }, 200);
+    sr.reveal('.skills__items li', { 
+        duration: 200,
+        origin: 'right',
+        delay: 1000,
+        viewFactor: 0.6         
+    }, 100);
+    sr.reveal('#work p', {
+        origin: 'left',
+        scale: 0.5,
+        duration: 800,
+        distance: '50%',
+        delay: 100
+    });
+    sr.reveal('.projects-grid__project', {
+        duration: 900,
+        delay: 800,
+        distance: '80%',
+        viewFactor: 0.1        
+    });
+    sr.reveal('#contact p', {
+        origin: 'left',
+        scale: 0.5,
+        duration: 800,
+        distance: '50%',
+        delay: 100
+    });
+    sr.reveal('#contact .controls, #contact button', {
+        delay: 300,
+        scale: 1,
+        duration: 800,
+        distance: '100%' 
+    });
+
+
+    /* Slider */
+    if ($('.slider').length) {
+        $('.slider').slick({
+            lazyLoad: 'ondemand',
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+
+    }
+    
+
+
+}   
+});
+
+function openModal(button, modal, gradient, posx, posy, toggleNav, overlayNav, overlayContent) {
+    var readMoreDialog = $(modal),
+        toggleReadMore = $(button);
+
+        $('body').addClass('noscroll');
+        toggleNav.css('z-index', 11);
+        $('.overlay-nav span').css('background-image', gradient);
+
+        overlayNav.css({ 'left': posx, 'top': posy });
+        overlayContent.css({ 'left': posx, 'top': posy });
+        overlayNav.children('span').velocity({
+            translateZ: 0,
+            scaleX: 1,
+            scaleY: 1,
+        }, 800, 'easeInCubic', function () {
+            readMoreDialog.addClass('fade-in');
+            $('.read-more__container').velocity({
+                translateY: ['0', '-200px'],
+                opacity: [1, 0],
+            }, 500);
+        });
+
+}
+
+function closeNavigation(toggleNav, overlayNav, overlayContent, navigation, posx, posy) {
+    overlayNav.css({ 'left': posx, 'top': posy });
+    overlayContent.css({ 'left': posx, 'top': posy });
+
     toggleNav.removeClass('close-nav');
     $('body').removeClass('noscroll');
+
 
     overlayContent.children('span').velocity({
         translateZ: 0,
@@ -279,13 +544,18 @@ function closeNavigation(toggleNav, overlayNav, overlayContent, navigation) {
     });
 }
 
+
 function windowSize() {
     windowHeight = window.innerHeight ? window.innerHeight : $(window).height();
     windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
 
 }
 
-function headerControl () {
+function headerControl() {
+    /*
+    Thanks to Marius Craciunoiu for this great tutorial. Available here:
+    https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
+    */
     // Hide Header on on scroll down
     var didScroll;
     var lastScrollTop = 0;
@@ -333,224 +603,8 @@ function headerControl () {
 
         lastScrollTop = st;
     }
-    /*
-    var scrollTimeOut = true,
-        lastYPos = 0,
-        yPos = 0,
-        yPosDelta = 5,
-        nav = $('.nav-trigger'),
-        logo = $('.logo-container'),
-        navHeight = nav.outerHeight(),
-        setNavClass = function () {
-            scrollTimeOut = false;
-            yPos = $(window).scrollTop();
 
-            if (Math.abs(lastYPos - yPos) >= yPosDelta) {
-                if (yPos > lastYPos && yPos > navHeight) {
-                    nav.addClass('hide-x');
-                    logo.addClass('hide-x');
-                } else {
-                    nav.removeClass('hide-x');
-                    logo.removeClass('hide-x');
-                }
-                lastYPos = yPos;
-            }
-        };
-    
-    $(window).scroll(function (e) {
-        scrollTimeOut = true;
-    });
-
-    setInterval(function () {
-        let windowWidth = $(window).width();
-        
-        if (windowWidth < 1180) {
-            if (scrollTimeOut) {
-                setNavClass();
-            }
-        }
-    }, 250);
-    */
-    
 }
-
-$(document).ready(function () {
-    if ($('main').length) {
-    console.log('Hello there! If you would like to inspect my code in a more cleaner way, you can switch to Responsive Design Mode (Ctrl+Shift+M) and refresh the page. This will disable the scroll animations which include the inline CSS through the global style attribute.')
-    //Init Function of init it wherever you like...
-    let windowWidth = $(window).width();
-
-    if (windowWidth < 1180) {
-        headerControl();
-    }
-    // For example, get window size on window resize
-    $(window).resize(function () {
-        let windowWidth = $(window).width();
-
-    if (windowWidth < 1180) {
-            headerControl();            
-
-        } else {
-
-            $('.nav-trigger').removeClass('hide-x');
-            $('.logo-container').removeClass('hide-x');
-        }
-    });
-    
-
-    var overlayNav = $('.overlay-nav'),
-        overlayContent = $('.overlay-content'),
-        navigation = $('.primary-nav'),
-        toggleNav = $('.nav-trigger');
-
-    //inizialize navigation and content layers
-    layerInit();
-    $(window).on('resize', function () {
-        window.requestAnimationFrame(layerInit);
-    });
-
-    //open/close the menu and cover layers
-    toggleNav.on('click', function () {
-        if (!toggleNav.hasClass('close-nav')) {
-            //it means navigation is not visible yet - open it and animate navigation layer
-            toggleNav.addClass('close-nav');
-            $('body').addClass('noscroll');
-            overlayNav.children('span').velocity({
-                translateZ: 0,
-                scaleX: 1,
-                scaleY: 1,
-            }, 500, 'easeInCubic', function () {
-                navigation.addClass('fade-in');
-            });
-        } else {
-            //navigation is open - close it and remove navigation layer
-            closeNavigation(toggleNav, overlayNav, overlayContent, navigation);
-        }
-    });
-
-    function layerInit() {
-        var diameterValue = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
-        overlayNav.children('span').velocity({
-            scaleX: 0,
-            scaleY: 0,
-            translateZ: 0,
-        }, 50).velocity({
-            height: diameterValue + 'px',
-            width: diameterValue + 'px',
-            top: -(diameterValue / 2) + 'px',
-            left: -(diameterValue / 2) + 'px',
-        }, 0);
-
-        overlayContent.children('span').velocity({
-            scaleX: 0,
-            scaleY: 0,
-            translateZ: 0,
-        }, 50).velocity({
-            height: diameterValue + 'px',
-            width: diameterValue + 'px',
-            top: -(diameterValue / 2) + 'px',
-            left: -(diameterValue / 2) + 'px',
-        }, 0);
-    }
-
-    $('main a').click(function () {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 800);
-        return false;
-    });
-    /* Scroll spy and navigation */
-    $(".primary-nav").scrollspy({
-        activeClass: 'current',
-        animate: true,
-        offset: '-40'
-    });
-
-    $(".logo-container").scrollspy({
-        activeClass: '',
-        animate: true,
-        offset: '-140'
-    });
-
-    $('.primary-nav a').click(function () {
-        closeNavigation(toggleNav, overlayNav, overlayContent, navigation);
-    });
-
-    window.sr = ScrollReveal({ 
-        mobile: false
-     });
-    sr.reveal('#about-me .section-content', {
-        scale: 0.5,
-        duration: 800,
-        distance: '120px'
-    });
-    sr.reveal('section h1', {
-        origin: 'left',
-        scale: 0.5,
-        duration: 800,
-        distance: '120px',
-        delay: 100
-    });
-
-    sr.reveal('.journey h3, .timeline__container', { 
-        delay: 300,
-        scale: 0.5,
-        duration: 800 
-    });
-    sr.reveal('.left-timeline', {
-        delay: 800,
-        origin: 'left'
-    });
-    sr.reveal('.right-timeline', {
-        delay: 800,
-        origin: 'right'
-    });
-    sr.reveal('.skills__title', {
-        scale: 0.5,
-        duration: 800,
-        viewFactor: 0.6,        
-        afterReveal: function (domEl) { 
-            $(domEl).addClass('rotate');
-        }, 
-    }, 200)
-    sr.reveal('.skills__items li', { 
-        duration: 200,
-        origin: 'right',
-        delay: 1000,
-        viewFactor: 0.6         
-    }, 100);
-    sr.reveal('#work p', {
-        origin: 'left',
-        scale: 0.5,
-        duration: 800,
-        distance: '50%',
-        delay: 100
-    });
-    sr.reveal('.projects-grid__project', {
-        duration: 900,
-        delay: 800,
-        distance: '80%',
-        viewFactor: 0.1        
-    });
-    sr.reveal('#contact p', {
-        origin: 'left',
-        scale: 0.5,
-        duration: 800,
-        distance: '50%',
-        delay: 100
-    });
-    sr.reveal('#contact .controls, #contact button', {
-        delay: 300,
-        scale: 1,
-        duration: 800,
-        distance: '100%' 
-    });
-
-    
-
-
-}   
-});
 
 (function ($) {
     function floatLabel(inputType) {

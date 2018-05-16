@@ -66,3 +66,66 @@
         content: unicode($icon-github);
     }
 }
+
+.f8-bg {
+    background-color: #F8f8f8;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-row-gap: 20px;
+
+    @include for-size(tablet-landscape-up) {
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+    }
+}
+
+// Slide slider ovveride
+
+.slick-next,
+.slick-prev {
+    width: 40px;
+    height: 40px;
+    
+    &:before {
+        color: #e0e0e0;
+        font-size: 40px;
+    }
+}
+
+.slick-prev {
+    left: -20px;
+}
+
+.slick-next {
+    right: -20px;
+}
+
+.slider {
+    padding: 20px;
+}
+
+.slide {
+    padding: 0 5px;
+}
+
+.slick-initialized .slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+   cursor: move; /* fallback if grab cursor is unsupported */
+   cursor: grab;
+   cursor: -moz-grab;
+   cursor: -webkit-grab;
+
+    &:active {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+}
+
+.slick-dots {
+    position: relative;
+}

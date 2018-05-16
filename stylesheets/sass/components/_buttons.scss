@@ -81,3 +81,13 @@ https: //codepen.io/chrisota/pen/bNdRaM
         }
     }
 }
+
+.btn-simple {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #F6F6F6;
+    }
+}

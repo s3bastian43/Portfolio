@@ -45,6 +45,16 @@ a {
             transition-duration: 400ms;
         }
     }
+
+    &.smaller-text-stricked {
+        &:before {
+            bottom: 8px;
+            top: 8px;
+        }
+        &:after {
+            height: 2px;
+        }
+    }
 }
 
 .read-more {
