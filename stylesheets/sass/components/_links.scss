@@ -2,6 +2,10 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: $accent-color;
+
+    &.normal-link:hover {
+        text-decoration: underline;
+    }
 }
 .stricked-link {
     text-decoration: none;
@@ -35,6 +39,7 @@ a {
     }
 
     &:hover, {
+        text-decoration: none;
         &::before {
             @include transform(scaleX(1));
             @include transform-origin(bottom left);
@@ -99,6 +104,7 @@ a {
     }
 
     &:hover {
+        text-decoration: none;        
         &::before {
             @include transform(scaleX(1));
             @include transform-origin(bottom left);

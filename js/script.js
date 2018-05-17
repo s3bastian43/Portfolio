@@ -440,7 +440,7 @@ $(document).ready(function () {
         distance: '50%',
         delay: 100
     });
-    sr.reveal('.projects-grid__project', {
+    sr.reveal('#work .projects-grid__project', {
         duration: 900,
         delay: 800,
         distance: '80%',
@@ -461,16 +461,49 @@ $(document).ready(function () {
     });
 
 
-    /* Slider */
+    /* Sliders */
     if ($('.slider').length) {
         $('.slider').slick({
             lazyLoad: 'ondemand',
             dots: true,
             infinite: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            prevArrow: '<span class="prev-arrow"><img src="../images/icons/arrow-left.svg"></span>',
+            nextArrow: '<span class="next-arrow"><img src="../images/icons/arrow-right.svg"></span>',            
         });
-
+    }
+    if ($('.slider-projects').length) {
+        $('.slider-projects').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: '<span class="prev-arrow"><img src="../images/icons/arrow-left.svg"></span>',
+            nextArrow: '<span class="next-arrow"><img src="../images/icons/arrow-right.svg"></span>',
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        infinite: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false                        
+                    }
+                }]
+        });
     }
     
 
