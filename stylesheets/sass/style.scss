@@ -825,6 +825,12 @@ main.about {
             opacity: .6;
         }
     }
+
+    &.center-bg-img {
+        background-size: 90%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
 }
 
 .projects-grid__center {
@@ -897,6 +903,13 @@ main.about {
 }
 
 .uniplanner-project {
+    .projects-grid__bg {
+        background-size: 95%;
+        background-position-y: 85%;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+    }
+
     @include for-size(tablet-landscape-up) {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -909,6 +922,20 @@ main.about {
         &:before {
             background-image: linear-gradient(to top right, transparentize(#00628C, 0.13), transparentize(#FF3878, 0.38));
         }
+    }
+}
+
+.johncullen-project {
+    @include for-size(tablet-landscape-up) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    }
+}
+
+.easitill-project {
+    .projects-grid__bg {
+        background-size: 80%;
     }
 }
 

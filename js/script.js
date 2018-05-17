@@ -460,6 +460,9 @@ $(document).ready(function () {
         distance: '100%' 
     });
 
+    /* Lazy Load */
+    $('.lazy').lazy();
+
 
     /* Sliders */
     if ($('.slider').length) {
