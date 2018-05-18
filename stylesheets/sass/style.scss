@@ -476,6 +476,10 @@ https: //codyhouse.co/gem/css-rounded-animated-navigation/
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        @media screen and (max-height: 650px) {
+            display: none;
+        }
     }
 }
 
@@ -926,6 +930,14 @@ main.about {
 }
 
 .johncullen-project {
+    .dark-overlay {
+        &:before {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%),
+            radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+            background-blend-mode: multiply,
+            multiply;
+        }
+    }
     @include for-size(tablet-landscape-up) {
     grid-column-start: 2;
     grid-row-start: 2;
