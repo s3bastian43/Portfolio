@@ -1155,8 +1155,7 @@ footer {
     height: 100px;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     &.first-separator {
         height: 120px;
