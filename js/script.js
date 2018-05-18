@@ -461,7 +461,11 @@ $(document).ready(function () {
     });
 
     /* Lazy Load */
-    $('.lazy').lazy();
+    $('.lazy').lazy({
+        effect: "fadeIn",
+        effectTime: 2000,
+        threshold: 0
+    });
 
 
     /* Sliders */
