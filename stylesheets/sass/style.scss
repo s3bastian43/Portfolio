@@ -1191,6 +1191,10 @@ footer {
 
     &.read-more-job {
         background-image: linear-gradient(to bottom right, #a8edea 0%, #fed6e3 100%);    
+
+        p {
+            margin-bottom: 20px;
+        }
     }
 
     &.read-more-uni {
@@ -1228,6 +1232,8 @@ footer {
     }
 
     .read-more__action {
+        margin-top: 20px;
+        border-top: 1px solid #efefef;
         padding: 10px 20px 10px 0;
         display: flex;
         align-items: center;
