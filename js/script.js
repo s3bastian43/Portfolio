@@ -442,7 +442,6 @@ $(document).ready(function () {
     });
     sr.reveal('#work .projects-grid__project', {
         duration: 900,
-        delay: 800,
         distance: '80%',
         viewFactor: 0.1        
     });
@@ -460,6 +459,19 @@ $(document).ready(function () {
         distance: '100%' 
     });
 
+    sr.reveal('.project-section', {
+        duration: 800
+    });
+
+    sr.reveal('.project .project-title', {
+        origin: 'left',
+        scale: 0.1,
+        duration: 1000,
+        distance: '100%',
+        delay: 100
+    });
+
+
     /* Lazy Load */
     if ($('.lazy').length) {
         $('.lazy').lazy();
@@ -476,6 +488,17 @@ $(document).ready(function () {
             slidesToScroll: 1,
             prevArrow: '<span class="prev-arrow"><img src="../images/icons/arrow-left.svg"></span>',
             nextArrow: '<span class="next-arrow"><img src="../images/icons/arrow-right.svg"></span>',            
+        });
+    }
+    if ($('.slider-johncullen-prototype').length) {
+        $('.slider-johncullen-prototype').slick({
+            lazyLoad: 'ondemand',
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            prevArrow: '<span class="prev-arrow"><img src="../images/icons/arrow-left.svg"></span>',
+            nextArrow: '<span class="next-arrow"><img src="../images/icons/arrow-right.svg"></span>',
         });
     }
     if ($('.slider-projects').length) {
