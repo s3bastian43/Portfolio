@@ -1,10 +1,20 @@
 <?php
-// the message
-$msg = "First line of text\nSecond line of text";
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+if(isset($_POST['submit'])) {
+    $to      = 'sebastian.ciobanu06@gmail.com';
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $headers = 'From: ' . $_POST['email'] . "\r\n" .
+        'Reply-To: ' . $_POST['email'] . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
 
-// send email
-mail("sebastian.ciobanu96@gmail.com","My subject",$msg);
+    if(mail($to, $subject, $message, $headers)){       
+        echo "Mail sent";
+    } else{
+        echo "Mail bounced";
+    }
+} else {
+    header("Location: /");
+    exit();
+}
 ?>
