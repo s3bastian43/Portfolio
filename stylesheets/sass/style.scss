@@ -835,6 +835,9 @@ main.about {
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
+    &.bg-img-s {
+        background-size: 60%;
+    }
 }
 
 .projects-grid__center {
@@ -1313,11 +1316,7 @@ main.project {
             }
             
             .project-row {
-                padding: 30px 20px;
-
-                @include for-size(tablet-portrait-up) {
-                    padding: 30px 40px;
-                }
+                padding: 0 20px 20px 20px;
 
                 p {
                     margin-bottom: 30px;
@@ -1327,7 +1326,7 @@ main.project {
                 &.two-col-grid {
                     img {
                         max-width: 800px;
-                        margin: 20px auto 0 auto;
+                        margin: 0 auto;
                         display: table;
                         width: 100%;
                         
@@ -1335,7 +1334,22 @@ main.project {
                 }
             }
         }
-    }   
+    }
+    
+    &.easitill-main-container .desc-section .two-col-grid img {
+        max-height: 400px;
+        width: unset !important;
+    }
+
+    &.easitill-main-container, &.waterperry-main-container {
+        .technology-section .project-row {
+            padding: 0 20px 50px 20px;
+        }
+    } 
+
+    .desc-section .project-row {
+        padding: 30px 20px 20px 20px !important;
+    }
 
     .view-project-website {
         font-size: 1em;
@@ -1346,6 +1360,7 @@ main.project {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 
         .team__member {
             padding: 20px 30px;
@@ -1371,6 +1386,14 @@ main.project {
                     border-color: #343434;
                 }
             }
+        }
+    }
+
+    .old-website-section {
+        .slide img {
+            max-height: 600px;
+            max-width: 100%;
+            margin: 0 auto;
         }
     }
 
@@ -1511,7 +1534,15 @@ main.project {
     }
 
     .slide-lg-img {
-        max-height: 800px !important;
+        max-height: 700px !important;
+    }
+
+    .style-tile-img {
+        margin: 0 auto;
+        display: table;
+        max-width: 700px;
+        width: 100%;
     }
 }
+
 

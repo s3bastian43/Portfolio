@@ -506,15 +506,15 @@ $(document).ready(function () {
             infinite: true,
             autoplay: true,
             autoplaySpeed: 2000,
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             prevArrow: '<span class="prev-arrow"><img src="../images/icons/arrow-left.svg"></span>',
             nextArrow: '<span class="next-arrow"><img src="../images/icons/arrow-right.svg"></span>',
             responsive: [{
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 2000,
                         infinite: true,
