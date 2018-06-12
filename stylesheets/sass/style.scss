@@ -206,17 +206,28 @@ canvas {
     }
 
     .landing-title__action {
-        margin: 35vh auto 30px auto;
+        margin: 30vh auto 30px auto;
 
         @include for-size(tablet-portrait-up) {
             margin: 20px auto 0 auto;
         }
         
         width: 100%;
-        max-width: 320px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include for-size(small-phone-only) {
+            justify-content: center;
+
+            a:first-child {
+                margin-bottom: 15px;
+            }
+        }
+        
     }
+
+
 
 }
 
@@ -1542,6 +1553,21 @@ main.project {
         display: table;
         max-width: 700px;
         width: 100%;
+    }
+
+    .old-website-section {
+        p:first-child {
+            margin-bottom: 10px !important;
+        }
+        ul {
+            margin-top: 0;
+            padding-left: 15px;
+            line-height: 1.6rem;
+
+            li {
+                list-style: initial;
+            }
+        }
     }
 }
 

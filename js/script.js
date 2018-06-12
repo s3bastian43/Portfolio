@@ -315,6 +315,7 @@ $(document).ready(function () {
         }
     });
 
+    // Used to create the circle animation.
     function layerInit() {
         var diameterValue = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
         overlayNav.children('span').velocity({
@@ -539,6 +540,8 @@ $(document).ready(function () {
 }   
 });
 
+
+// Function used ofr opening the modal box. Used on the homepage read more links.
 function openModal(button, modal, gradient, posx, posy, toggleNav, overlayNav, overlayContent) {
     var readMoreDialog = $(modal),
         toggleReadMore = $(button);
@@ -563,6 +566,8 @@ function openModal(button, modal, gradient, posx, posy, toggleNav, overlayNav, o
 
 }
 
+
+// Closes naviagation opened modals
 function closeNavigation(toggleNav, overlayNav, overlayContent, navigation, posx, posy) {
     overlayNav.css({ 'left': posx, 'top': posy });
     overlayContent.css({ 'left': posx, 'top': posy });
@@ -667,7 +672,7 @@ function headerControl() {
 
 }
 
-(function ($) {
+(function () {
     function floatLabel(inputType) {
         $(inputType).each(function () {
             var $this = $(this);
@@ -682,7 +687,7 @@ function headerControl() {
         });
     }
     floatLabel(".float-label");
-})(jQuery);
+})();
 
 
 
