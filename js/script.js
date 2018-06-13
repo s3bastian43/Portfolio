@@ -460,7 +460,7 @@ $(document).ready(function () {
         distance: '100%' 
     });
 
-    sr.reveal('.project-section', {
+    sr.reveal('.project-section .section-content', {
         duration: 800
     });
 
@@ -471,6 +471,13 @@ $(document).ready(function () {
         distance: '100%',
         delay: 100
     });
+
+    sr.reveal('.footer-content .social-icon', {
+        scale: 0.1,
+        duration: 700,
+        distance: '100%',
+    });
+
 
 
     /* Lazy Load */

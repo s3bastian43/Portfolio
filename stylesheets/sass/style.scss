@@ -1152,7 +1152,8 @@ section h1,
 #contact .controls,
 #contact button,
 .project .project-title,
-.project-section {
+.project-section .section-content,
+.footer-content .social-icon {
     visibility: hidden;
 }
 
@@ -1260,7 +1261,7 @@ footer {
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 1px 4px 8px 1px rgba(46, 61, 73, 0.2);
-    max-width: 320px;
+    max-width: 600px;
     opacity: 0;
     transform: translateY(-200px);
 
@@ -1282,7 +1283,11 @@ footer {
     }
 
     .read-more__content {
-        padding: 20px 20px 10px 20px;
+        padding: 0 20px 10px 20px;
+        
+        p {
+            white-space: pre-line;
+        }
     }
 
     .read-more__action {
