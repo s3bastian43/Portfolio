@@ -207,6 +207,10 @@ canvas {
 
     .landing-title__action {
         margin: 30vh auto 30px auto;
+        a {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
 
         @include for-size(tablet-portrait-up) {
             margin: 20px auto 0 auto;
@@ -217,7 +221,7 @@ canvas {
         justify-content: space-between;
         flex-wrap: wrap;
 
-        @include for-size(small-phone-only) {
+        @media screen and (max-width: 379px) {
             justify-content: center;
 
             a:first-child {
