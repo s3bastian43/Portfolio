@@ -1,0 +1,51 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/atob/bin/atob.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/atob/browser-atob.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/atob/node-atob.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/atob/test.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/node_modules/define-property/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/node_modules/is-accessor-descriptor/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/node_modules/is-data-descriptor/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/node_modules/is-descriptor/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/node_modules/isobject/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/base/node_modules/kind-of/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/glob/glob.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/glob/sync.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/ms/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/ret/lib/index.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/ret/lib/positions.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/ret/lib/sets.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/ret/lib/types.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/ret/lib/util.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/use/index.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/atob/bin/atob.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/atob/node-atob.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/atob/test.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/ms/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/ret/lib/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/ret/lib/positions.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/ret/lib/sets.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/ret/lib/types.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/ret/lib/util.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/use/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/atob/browser-atob.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/node_modules/define-property/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/node_modules/is-accessor-descriptor/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/node_modules/is-data-descriptor/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/node_modules/is-descriptor/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/node_modules/isobject/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/base/node_modules/kind-of/index.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/glob/glob.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/glob/sync.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

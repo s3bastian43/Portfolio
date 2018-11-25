@@ -341,14 +341,21 @@ $(document).ready(function () {
         }, 0);
     }
 
-    $('.left-timeline .read-more').on('click', function (e) {
+    $('.timeline__content .read-more-siveco--btn').on('click', function (e) {
+        let posx = e.clientX;
+        let posy = e.clientY;
+        let gradient = 'linear-gradient(to top, #5ee7df 0%, #b490ca 100%)';
+        openModal(this, '.read-more-siveco', gradient, posx, posy, toggleNav, overlayNav, overlayContent);
+    });
+
+    $('.timeline__content .read-more-easitill--btn').on('click', function (e) {
         let posx = e.clientX;
         let posy = e.clientY;
         let gradient = 'linear-gradient(to bottom right, #a8edea 0%, #fed6e3 100%)';
-        openModal(this, '.read-more-job', gradient, posx, posy, toggleNav, overlayNav, overlayContent);
+        openModal(this, '.read-more-easitill', gradient, posx, posy, toggleNav, overlayNav, overlayContent);
     });
 
-    $('.right-timeline .read-more').on('click', function (e) {
+    $('.timeline__content .read-more-uni--btn').on('click', function (e) {
         let posx = e.clientX;
         let posy = e.clientY;
         let gradient = 'linear-gradient(to top left, #37ecba 0%, #72afd3 100%)';
@@ -391,7 +398,7 @@ $(document).ready(function () {
     });
 
     /* Scroll Reveal */
-    window.sr = ScrollReveal({ 
+    window.sr = ScrollReveal({
         mobile: false
      });
     sr.reveal('#about-me .section-content', {

@@ -63,7 +63,7 @@ canvas {
         max-width: 500px;
         height: auto;
         align-items: center;
-        
+        border-radius: 20px;
 
         .landing-title__vcentered {
             min-height: 50vh;
@@ -1279,6 +1279,10 @@ footer {
         img {
             max-width: 30px;
             margin-right: 20px;
+
+            &.logo-siveco {
+                max-width: 40px;
+            }
         }
     }
     h2 {
@@ -1305,8 +1309,6 @@ footer {
         justify-content: flex-end;
     }
 }
-
-
 
 main.project {
     margin-top: 100px;

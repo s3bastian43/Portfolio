@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>  
-    
+    <script src="https://unpkg.com/scrollreveal@3.3.6/dist/scrollreveal.min.js"></script>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -30,7 +30,7 @@
 
         gtag('config', 'UA-118003333-2');
     </script>
-            
+
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 
     </script>
     <div class="logo-container">
-        <img src="images/logo-3A.svg" width="100%" height="100%">
+        <img src="images/logo-3A.svg" width="100%" height="100%" alt="Website Logo" title="Logo"/>
         <a href="#about-me"></a>
     </div>
 
@@ -64,24 +64,46 @@
                     <li><a href="#contact" class="stricked-link">Contact</a></li>
                 </div>
                 <div class="menu__bottom">
-                    <a class="social-icon" href="https://github.com/s3bastian43" title="My GitHub Profile">
+                    <a class="social-icon" href="https://github.com/s3bastian43" title="My GitHub Profile" target="_blank">
                         <i class="icon-github"></i>
                     </a>
-                    <a class="social-icon" href="https://www.linkedin.com/in/sebastianciobanu/" title="My LinkedIn Profile">
+                    <a class="social-icon" href="https://www.linkedin.com/in/sebastianciobanu/" title="My LinkedIn Profile" target="_blank">
                         <i class="icon-linkedin-with-circle"></i>
                     </a>
-                    <a class="social-icon" href="https://twitter.com/s3bastian43" title="My Twitter Profile">
+                    <a class="social-icon" href="https://twitter.com/s3bastian43" title="My Twitter Profile" target="_blank">
                         <i class="icon-twitter-with-circle"></i>
                     </a>
                 </div>
             </div>
         </ul>
     </nav>
-    
-    <div class="dialog read-more-job">
+
+    <div class="dialog read-more-siveco">
         <div class="read-more__container">
             <div class="read-more__header">
-                <img src="images/easitill-logo.svg"><h2>Easitill</h2>
+                <img src="images/siveco.png" class="logo-siveco" alt="Siveco Logo" title="Siveco Logo"/><h2>Siveco</h2>
+            </div>
+            <div class="read-more__content">
+                <p>
+                    SIVECO Romania develops and exports software products and consultancy projects with high added value to countries within the European Community, The Middle East, North Africa and the CIS area.
+                    <br/> My role within the company is to analyse, test and develop code for the multiple projects I am working on. Because my current skills can be useful both on back-end and front-end I have to challenge myself to bring the same quality on anything I develop or design.
+                    <br/>Most of the projects built within Siveco imply working with multiple partners across the European Union, this fact conducts at the need for a better collaboration and organisation of all the persons involved within a project. Since the actions of a single person can affect thousands of persons, including the users, I learned once more that us, as developers, have to work smart, carefully, and also fast.
+                </p>
+                <br/>
+                <a class="stricked-link smaller-text-stricked" href="http://www.siveco.ro/en" target="_blank">Company Website</a>
+            </div>
+            <div class="read-more__action">
+                <a class="close-modal btn btn-simple">
+                    Close
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dialog read-more-easitill">
+        <div class="read-more__container">
+            <div class="read-more__header">
+                <img src="images/easitill-logo.svg" alt="Easitill Logo" title="Easitill Logo"/><h2>Easitill</h2>
             </div>
             <div class="read-more__content">
                 <p>
@@ -89,7 +111,8 @@
                     <br/> As a part-time web designer, my duties included the designing, the prototyping and the development of eCommerce and brochure websites, as well as improving brand identity, SEO and performance.
                     <br/>Within my time at Easitill I developed and worked on over 15 websites. This and the right guidance helped me expand my skills in HTML, CSS, PHP, WordPress, UX, UI but also offered me a better understanding of team collaboration and working with real clients.
                 </p>
-                <a class="stricked-link smaller-text-stricked" href="https://www.easitill.co.uk/">Company Website</a>
+                <br/>
+                <a class="stricked-link smaller-text-stricked" href="https://www.easitill.co.uk/" target="_blank">Company Website</a>
             </div>
             <div class="read-more__action">
                 <a class="close-modal btn btn-simple">
@@ -102,7 +125,7 @@
     <div class="dialog read-more-uni">
         <div class="read-more__container">
             <div class="read-more__header">
-                <h2>Web Design Degree</h2>
+                <img src="images/uon.svg" alt="The University of Northampton Logo" title="The University of Northampton Logo"/><h2>Web Design Degree</h2>
             </div>
             <div class="read-more__content">
                 <p>
@@ -142,27 +165,39 @@
                             <div class="timeline__container">
                                 <div class="timeline__block">
                                     <div class="timeline__img timeline__img--picture js-img">
-                                        <img src="images/browser.svg" alt="Web Designer Icon">
+                                        <img src="images/coding.svg" alt="Web Designer Icon" title="Web Designer Icon"/>
                                     </div>
 
                                     <div class="timeline__content left-timeline">
+                                        <h4>Full-Stack Web Developer</h4>
+                                        <span class="timeline__location">Siveco Romania</span>
+                                        <span class="timeline__date">Sept. 2018 - Present</span>
+                                        <a class="read-more read-more-siveco--btn stricked-link">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="timeline__block">
+                                    <div class="timeline__img timeline__img--picture js-img">
+                                        <img src="images/browser.svg" alt="Web Designer Icon" title="Web Designer Icon"/>
+                                    </div>
+
+                                    <div class="timeline__content right-timeline">
                                         <h4>Web Designer</h4>
                                         <span class="timeline__location">Eastill Ltd Northampton</span>
                                         <span class="timeline__date">Oct. 2017 - June 2018</span>                                
-                                        <a class="read-more stricked-link">Read more</a>
+                                        <a class="read-more read-more-easitill--btn stricked-link">Read more</a>
                                     </div>
                                 </div>
 
                                 <div class="timeline__block">
                                     <div class="timeline__img timeline__img--movie js-img">
-                                        <img src="images/graduation-cap.svg" alt="Graduate Cap">
+                                        <img src="images/graduation-cap.svg" alt="Graduate Cap" title="Graduate Cap"/>
                                     </div>
 
-                                    <div class="timeline__content right-timeline">
+                                    <div class="timeline__content left-timeline">
                                         <h4>Business Computing (Web Design) Graduate</h4>
                                         <span class="timeline__location">The University Of Northampton</span>
                                         <span class="timeline__date">Sept. 2015 - Apr. 2018</span>
-                                        <a class="read-more stricked-link">Read more</a>
+                                        <a class="read-more read-more-uni--btn stricked-link">Read more</a>
                                     </div>
                                 </div>
 
@@ -189,8 +224,8 @@
                             <li>JavaScript</li>
                             <li>jQuery</li>                            
                             <li>React.js</li>
-                            <li>Pug.js</li>
-                            <li>Bootstrap</li>                         
+                            <li>Bootstrap</li>
+                            <li>Foundation</li>
                             <li>Material Design Lite</li>                                                        
                         </ul>
                     </div>
@@ -211,6 +246,7 @@
                         </div>
                         <ul class="skills__items">
                             <li>WordPress</li>
+                            <li>Drupal</li>
                             <li>Jekyll</li>
                         </ul>
                     </div>
@@ -372,7 +408,9 @@
                             <label for="message">Message</label>
                         </div>
                         
-                        <button value="Send" type="submit" name="submit" class="btn btn-primary wider send-message">Send Message <img src="images/send-mail1.svg"></button>
+                        <button value="Send" type="submit" name="submit" class="btn btn-primary wider send-message">
+                            Send Message <img src="images/send-mail1.svg" alt="Send Mail Icon" title="Send Mail Icon"/>
+                        </button>
                     </form>                  
                 </div>
         </section>
@@ -380,13 +418,13 @@
     </main>
     <footer>
         <div class="footer-content">
-            <a class="social-icon" href="https://github.com/s3bastian43" title="My GitHub Profile">
+            <a class="social-icon" href="https://github.com/s3bastian43" title="My GitHub Profile" target="_blank">
                 <i class="icon-github"></i>
             </a>
-            <a class="social-icon" href="https://www.linkedin.com/in/sebastianciobanu/" title="My LinkedIn Profile">
+            <a class="social-icon" href="https://www.linkedin.com/in/sebastianciobanu/" title="My LinkedIn Profile" target="_blank">
                 <i class="icon-linkedin-with-circle"></i>
             </a>
-            <a class="social-icon" href="https://twitter.com/s3bastian43" title="My Twitter Profile">
+            <a class="social-icon" href="https://twitter.com/s3bastian43" title="My Twitter Profile" target="_blank">
                 <i class="icon-twitter-with-circle"></i>
             </a>
         </div>
