@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f4e3e26-1ccf-4b04-9bfc-9681feb91f68" name="Default Changelist" comment="">
+    <list default="true" id="5f4e3e26-1ccf-4b04-9bfc-9681feb91f68" name="Default Changelist" comment="Resolved small typos.&#10;Added &quot;alt&quot; tag to all images.&#10;Added &quot;title&quot; tag to anchors which are not self-describing.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/easitill.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/easitill.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/homestart.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/homestart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/johncullen.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/johncullen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/portfolio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/uniplanner.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/uniplanner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/waterperry.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/waterperry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/sass/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,73 +20,76 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1889697735">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="7" />
-          <entry key="js" value="1" />
-          <entry key="scss" value="1" />
-          <entry key="svg" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="7" />
-          <entry key="JavaScript" value="1" />
-          <entry key="SCSS" value="1" />
-          <entry key="SVG" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="450" />
-          <entry key="js" value="41" />
-          <entry key="scss" value="32" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="450" />
-          <entry key="JavaScript" value="41" />
-          <entry key="SCSS" value="32" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="241">
+              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/logo-3A.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2269">
-              <caret line="426" column="117" selection-start-line="426" selection-start-column="117" selection-end-line="426" selection-end-column="117" />
+            <state relative-caret-position="368">
+              <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheets/sass/style.scss">
+        <entry file="file://$PROJECT_DIR$/projects/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1283" column="28" selection-start-line="1283" selection-start-column="28" selection-end-line="1283" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/uniplanner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="50" column="12" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/easitill.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="50" selection-start-line="50" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/waterperry.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -97,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
+            <state relative-caret-position="5382">
               <caret line="346" column="73" selection-start-line="346" selection-start-column="73" selection-end-line="346" selection-end-column="73" />
               <folding>
                 <element signature="e#3881#7007#0" />
@@ -113,7 +113,6 @@
       <find>sr.</find>
       <find>landing-ti</find>
       <find>landing-title{</find>
-      <find>&lt;img</find>
       <find>&lt;a class=&quot;social-icon&quot; href=&quot;https://github.com/s3bastian43&quot;&gt;</find>
       <find>&lt;a class=&quot;social-icon&quot; href=&quot;https://www.linkedin.com/in/sebastianciobanu/&quot;&gt;</find>
       <find>&lt;a class=&quot;social-icon&quot; href=&quot;https://twitter.com/s3bastian43&quot;&gt;</find>
@@ -122,6 +121,16 @@
       <find>&gt;Visit Website&lt;/a&gt;</find>
       <find>read-more-job</find>
       <find>&lt;a class=&quot;social-icon&quot; href=&quot;https://github.com/s3bastian43&quot; title=&quot;My GitHub Profile&quot;&gt;</find>
+      <find>For designing the logo &amp; other vectorial graphics</find>
+      <find>modfifying</find>
+      <find>vectorial</find>
+      <find>&lt;img src=&quot;../images/logo-3A.svg&quot; width=&quot;100%&quot; height=&quot;100%&quot;</find>
+      <find>&lt;img src=&quot;../images/logo-3A.svg&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;</find>
+      <find>&lt;img src=&quot;../images/portfolio/andrei.jpg&quot;</find>
+      <find>'s website</find>
+      <find>&lt;a href=&quot;../home.html&quot;&gt;&lt;/a&gt;</find>
+      <find>&lt;img</find>
+      <find>&lt;a class=&quot;nav-trigger&quot;&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;a class=&quot;social-icon&quot; href=&quot;https://github.com/s3bastian43&quot; target=&quot;_blank&quot;&gt;</replace>
@@ -131,6 +140,10 @@
       <replace>target=&quot;_blank&quot;&gt;Visit Website&lt;/a&gt;</replace>
       <replace>ScrollReveal().</replace>
       <replace>&lt;a class=&quot;social-icon&quot; href=&quot;https://github.com/s3bastian43&quot; title=&quot;My GitHub Profile&quot;&gt;</replace>
+      <replace>&lt;img src=&quot;../images/logo-3A.svg&quot; width=&quot;100%&quot; height=&quot;100%&quot; alt=&quot;Personal logo (S letter)&quot;/&gt;</replace>
+      <replace>website</replace>
+      <replace>&lt;a href=&quot;../home.html&quot; title=&quot;Back to home&quot;&gt;&lt;/a&gt;</replace>
+      <replace>&lt;a class=&quot;nav-trigger&quot; title=&quot;Navigation&quot;&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -141,48 +154,39 @@
       <list>
         <option value="$PROJECT_DIR$/images/uon.svg" />
         <option value="$PROJECT_DIR$/stylesheets/sass/style.scss" />
-        <option value="$PROJECT_DIR$/projects/homestart.html" />
-        <option value="$PROJECT_DIR$/projects/easitill.html" />
-        <option value="$PROJECT_DIR$/projects/portfolio.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/projects/easitill.html" />
+        <option value="$PROJECT_DIR$/projects/homestart.html" />
+        <option value="$PROJECT_DIR$/projects/johncullen.html" />
+        <option value="$PROJECT_DIR$/projects/uniplanner.html" />
+        <option value="$PROJECT_DIR$/projects/waterperry.html" />
+        <option value="$PROJECT_DIR$/projects/portfolio.html" />
         <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3832" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1015" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -217,13 +221,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stylesheets/sass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -255,23 +258,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543079928330</updated>
-      <workItem from="1543079931235" duration="11323000" />
+      <workItem from="1543079931235" duration="12087000" />
+      <workItem from="1553103790084" duration="2958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11323000" />
+    <option name="totallyTimeSpent" value="15045000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="3832" y="-8" width="1936" height="1015" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19915701" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
@@ -279,6 +280,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.12616822" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -287,17 +292,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Resolved small typos.&#10;Added &quot;alt&quot; tag to all images.&#10;Added &quot;title&quot; tag to anchors which are not self-describing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved small typos.&#10;Added &quot;alt&quot; tag to all images.&#10;Added &quot;title&quot; tag to anchors which are not self-describing." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/coding.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -313,48 +312,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="29509">
           <caret line="1283" column="28" selection-start-line="1283" selection-start-column="28" selection-end-line="1283" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/easitill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="104" column="127" selection-start-line="104" selection-start-column="127" selection-end-line="104" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/homestart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1817">
-          <caret line="14" column="89" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="106" column="203" selection-start-line="106" selection-start-column="203" selection-end-line="106" selection-end-column="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/waterperry.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/uniplanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3450">
-          <caret line="165" column="34" lean-forward="true" selection-start-line="165" selection-start-column="34" selection-end-line="165" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
+        <state relative-caret-position="5382">
           <caret line="346" column="73" selection-start-line="346" selection-start-column="73" selection-end-line="346" selection-end-column="73" />
           <folding>
             <element signature="e#3881#7007#0" />
@@ -362,10 +327,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo-3A.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/easitill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="50" selection-start-line="50" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/portfolio/homestart/homestart-main.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/homestart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/johncullen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="110" column="28" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/uniplanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/waterperry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2269">
-          <caret line="426" column="117" selection-start-line="426" selection-start-column="117" selection-end-line="426" selection-end-column="117" />
+        <state relative-caret-position="368">
+          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
