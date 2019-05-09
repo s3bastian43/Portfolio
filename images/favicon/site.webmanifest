@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Sebastian's Portfolio",
+    "short_name": "Seb",
+    "scope": "/",
+    "start_url": "/",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
