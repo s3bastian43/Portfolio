@@ -703,5 +703,21 @@ function headerControl() {
     floatLabel(".float-label");
 })();
 
+window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#ffffff",
+                "text": "#454545"
+            }
+        },
+        "theme": "classic",
+        "position": "bottom-left",
+        "content": {
+            "message": "This website uses cookies to ensure you get the best experience.",
+            "dismiss": "Accept 🍪"
+        }
+})});
+
 
 
