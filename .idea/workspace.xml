@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f4e3e26-1ccf-4b04-9bfc-9681feb91f68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/easitill.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/easitill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/homestart.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/homestart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/johncullen.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/johncullen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/uniplanner.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/uniplanner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/waterperry.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/waterperry.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/sass/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,22 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="584">
+              <caret line="64" selection-start-line="64" selection-end-line="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_cookieconsent2_3.1.0_cookieconsent.min.js">
+        <entry file="file://$PROJECT_DIR$/projects/uniplanner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" lean-forward="true" selection-end-column="20808" />
+            <state relative-caret-position="584">
+              <caret line="342" column="4" lean-forward="true" selection-start-line="342" selection-start-column="4" selection-end-line="342" selection-end-column="54" />
               <folding>
-                <element signature="e#41#47#1" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,17 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="1606" column="29" selection-start-line="1606" selection-start-column="29" selection-end-line="1606" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheets/sass/components/_buttons.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="369">
+              <caret line="1588" column="15" selection-start-line="1588" selection-start-column="15" selection-end-line="1588" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -74,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="593">
+              <caret line="451" column="51" selection-start-line="451" selection-start-column="51" selection-end-line="451" selection-end-column="51" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -90,8 +83,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/easitill.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="50" selection-start-line="50" selection-end-line="51" />
+            <state relative-caret-position="616">
+              <caret line="313" column="54" selection-start-line="313" selection-start-column="54" selection-end-line="313" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/portfolio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="417" column="54" selection-start-line="417" selection-start-column="54" selection-end-line="417" selection-end-column="54" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,29 +104,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/waterperry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2507">
-              <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+            <state relative-caret-position="322">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheets/css/style.css">
+        <entry file="file://$PROJECT_DIR$/projects/johncullen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="593">
+              <caret line="365" column="54" selection-start-line="365" selection-start-column="54" selection-end-line="365" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/script.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/homestart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="708" column="22" selection-start-line="708" selection-start-column="22" selection-end-line="708" selection-end-column="22" />
-              <folding>
-                <element signature="e#3881#7007#0" />
-              </folding>
+            <state relative-caret-position="552">
+              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -163,12 +165,13 @@
       <find>.btn</find>
       <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheets/css/style.css&quot;&gt;</find>
       <find>cookieconsent.min.js</find>
+      <find>.read-more__container</find>
+      <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;../stylesheets/css/style.css&quot;&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;a class=&quot;social-icon&quot; href=&quot;https://github.com/s3bastian43&quot; target=&quot;_blank&quot;&gt;</replace>
       <replace>&lt;a class=&quot;social-icon&quot; href=&quot;https://twitter.com/s3bastian43&quot; target=&quot;_blank&quot;&gt;</replace>
       <replace>&lt;script src=&quot;https://unpkg.com/scrollreveal@3.3.6/dist/scrollreveal.min.js&quot;&gt;&lt;/script&gt;</replace>
-      <replace />
       <replace>target=&quot;_blank&quot;&gt;Visit Website&lt;/a&gt;</replace>
       <replace>ScrollReveal().</replace>
       <replace>&lt;a class=&quot;social-icon&quot; href=&quot;https://github.com/s3bastian43&quot; title=&quot;My GitHub Profile&quot;&gt;</replace>
@@ -176,28 +179,34 @@
       <replace>website</replace>
       <replace>&lt;a href=&quot;../home.html&quot; title=&quot;Back to home&quot;&gt;&lt;/a&gt;</replace>
       <replace>&lt;a class=&quot;nav-trigger&quot; title=&quot;Navigation&quot;&gt;</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sebastian Ciobanu &lt;ciobanu.sebastian96@yahoo.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/images/uon.svg" />
-        <option value="$PROJECT_DIR$/projects/easitill.html" />
-        <option value="$PROJECT_DIR$/projects/homestart.html" />
-        <option value="$PROJECT_DIR$/projects/johncullen.html" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/images/favicon/site.webmanifest" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/js/cookieconsent.min.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/stylesheets/sass/style.scss" />
         <option value="$PROJECT_DIR$/projects/uniplanner.html" />
         <option value="$PROJECT_DIR$/projects/waterperry.html" />
         <option value="$PROJECT_DIR$/projects/portfolio.html" />
-        <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/home.html" />
-        <option value="$PROJECT_DIR$/images/favicon/site.webmanifest" />
-        <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/stylesheets/sass/style.scss" />
-        <option value="$PROJECT_DIR$/js/cookieconsent.min.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/projects/easitill.html" />
+        <option value="$PROJECT_DIR$/projects/johncullen.html" />
+        <option value="$PROJECT_DIR$/projects/homestart.html" />
       </list>
     </option>
   </component>
@@ -227,6 +236,11 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -317,7 +331,7 @@
       <workItem from="1543079931235" duration="12087000" />
       <workItem from="1553103790084" duration="2958000" />
       <workItem from="1557404543120" duration="6081000" />
-      <workItem from="1557413469985" duration="390000" />
+      <workItem from="1557413469985" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="Updated webmanifest">
       <created>1557405354849</created>
@@ -326,11 +340,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557405354849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added cookie consent banner to index.">
+      <created>1557414046685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557414046685</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21516000" />
+    <option name="totallyTimeSpent" value="23075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -363,7 +384,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Resolved small typos.&#10;Added &quot;alt&quot; tag to all images.&#10;Added &quot;title&quot; tag to anchors which are not self-describing." />
     <MESSAGE value="Updated webmanifest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated webmanifest" />
+    <MESSAGE value="Added cookie consent banner to index." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cookie consent banner to index." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/coding.svg">
@@ -375,42 +397,8 @@
     <entry file="file://$PROJECT_DIR$/images/portfolio/homestart/homestart-main.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/homestart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/johncullen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="110" column="28" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/logo-3A.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/uniplanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json" />
     <entry file="file://$PROJECT_DIR$/browserconfig.xml">
@@ -435,38 +423,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/easitill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" selection-start-line="50" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/waterperry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2507">
-          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,13 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="1606" column="29" selection-start-line="1606" selection-start-column="29" selection-end-line="1606" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_cookieconsent2_3.1.0_cookieconsent.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -494,6 +447,13 @@
           <folding>
             <element signature="e#41#47#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="1588" column="15" selection-start-line="1588" selection-start-column="15" selection-end-line="1588" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -506,8 +466,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="584">
+          <caret line="64" selection-start-line="64" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="451" column="51" selection-start-line="451" selection-start-column="51" selection-end-line="451" selection-end-column="51" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/uniplanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="342" column="4" lean-forward="true" selection-start-line="342" selection-start-column="4" selection-end-line="342" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/waterperry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="417" column="54" selection-start-line="417" selection-start-column="54" selection-end-line="417" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/easitill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="313" column="54" selection-start-line="313" selection-start-column="54" selection-end-line="313" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/johncullen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="365" column="54" selection-start-line="365" selection-start-column="54" selection-end-line="365" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/homestart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
         </state>
       </provider>
     </entry>
