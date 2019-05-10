@@ -1,8 +1,6 @@
-const version = "0.6.11";
-const cacheName = `portfolio-${version}`;
 self.addEventListener('install', e => {
     e.waitUntil(
-        caches.open(cacheName).then(cache => {
+        caches.open('portfolio').then(cache => {
             return cache.addAll([
                 `/`,
                 `/index.html`,
@@ -27,7 +25,7 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.open(cacheName)
+        caches.open('portfolio')
             .then(cache => cache.match(event.request, {ignoreSearch: true}))
             .then(response => {
                 return response || fetch(event.request);
